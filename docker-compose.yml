@@ -46,7 +46,7 @@ services:
       mode: global
 
   alertmanager:
-    image: prom/alertmanager
+    image: prom/alertmanager:v0.12.0
     ports:
       - 9093:9093
     volumes:
@@ -85,7 +85,7 @@ services:
       - config.monitoring
 
   blackbox_exporter:
-    image: prom/blackbox-exporter
+    image: prom/blackbox-exporter:v0.10.0
     ports:
       - 9115:9115
     volumes:
